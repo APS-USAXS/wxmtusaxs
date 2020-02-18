@@ -8,4 +8,4 @@ script to scan those samples.  It was derived from the
 *wxmtxy* project.  *wxmtxy* is based on wxPython and relies on 
 CaChannel to communicate with EPICS.
 
-For more help, explanations are provided in the HTML pages.
+For more help, explanations are provided in the [HTML](https://htmlpreview.github.io/?https://github.com/APS-USAXS/wxmtusaxs/blob/master/index.html) pages.
