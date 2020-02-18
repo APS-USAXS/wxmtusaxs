@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /home/beams/USAXS/Apps/wxmtusaxs/
+/APSshare/bin/python  wxmtusaxs.py samplestage.xml  &

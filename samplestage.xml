@@ -1,0 +1,232 @@
+<?xml version="1.0" ?>
+<wxmtusaxs date="2020-02-02" time="19:28:53" version="1.0">
+  <XYpair name="sample stage" selected="True">
+    <EPICS_configuration>
+      <axis name="y">
+        <flag isMotorRec="True"/>
+        <field name="VAL" pv="9idcLAX:m58:c2:m2.VAL"/>
+        <field name="RBV" pv="9idcLAX:m58:c2:m2.RBV"/>
+        <field name="EGU" pv="9idcLAX:m58:c2:m2.EGU"/>
+        <field name="DESC" pv="9idcLAX:m58:c2:m2.DESC"/>
+        <field name="DMOV" pv="9idcLAX:m58:c2:m2.DMOV"/>
+        <field name="STOP" pv="9idcLAX:m58:c2:m2.STOP"/>
+      </axis>
+      <axis name="x">
+        <flag isMotorRec="True"/>
+        <field name="VAL" pv="9idcLAX:m58:c2:m1.VAL"/>
+        <field name="RBV" pv="9idcLAX:m58:c2:m1.RBV"/>
+        <field name="EGU" pv="9idcLAX:m58:c2:m1.EGU"/>
+        <field name="DESC" pv="9idcLAX:m58:c2:m1.DESC"/>
+        <field name="DMOV" pv="9idcLAX:m58:c2:m1.DMOV"/>
+        <field name="STOP" pv="9idcLAX:m58:c2:m1.STOP"/>
+      </axis>
+    </EPICS_configuration>
+    <tab name="Calibration">
+      <row USAXSMode="U:P:W:" name="GC_SRM3600" thickness="1" x="20.000" y="20.000"/>
+      <row USAXSMode="U:P:W:" name="Blank" thickness="1" x="-20.000" y="10.000"/>
+      <row USAXSMode="U:P:W:" name="AgBehLaB6" x="20.000" y="1.000"/>
+    </tab>
+    <tab name="Heater">
+      <row USAXSMode="U:P:W:" name="Empty_Heater" x="-0.000" y="-0.000"/>
+    </tab>
+    <tab name="NMRplate">
+      <row USAXSMode="U:P:W:" name="AgBehLAB6" thickness="1" x="20.000" y="1.000"/>
+      <row USAXSMode="U:P:W:" thickness="4" x="10" y="0"/>
+      <row USAXSMode="U:P:W:" thickness="4" x="20" y="0"/>
+      <row USAXSMode="U:P:W:" thickness="4" x="30" y="0"/>
+      <row USAXSMode="U:P:W:" thickness="4" x="40" y="0"/>
+      <row USAXSMode="U:P:W:" thickness="4" x="50" y="0"/>
+      <row USAXSMode="U:P:W:" thickness="4" x="60" y="0"/>
+      <row USAXSMode="U:P:W:" thickness="4" x="70" y="0"/>
+      <row USAXSMode="U:P:W:" thickness="4" x="80" y="0"/>
+      <row USAXSMode="U:P:W:" thickness="4" x="90" y="0"/>
+      <row USAXSMode="U:P:W:" thickness="4" x="100" y="0"/>
+      <row USAXSMode="U:P:W:" thickness="4" x="110" y="0"/>
+      <row USAXSMode="U:P:W:" thickness="4" x="120" y="0"/>
+      <row USAXSMode="U:P:W:" thickness="4" x="130" y="0"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+      <row USAXSMode="U:P:W:"/>
+    </tab>
+    <tab name="Magnetic Plate">
+      <row USAXSMode="U:P:W:" name="AgBehLaB6" x="20.001" y="0.000"/>
+      <row USAXSMode="U:P:W:" name="AirBlank" x="20.001" y="20.000"/>
+      <row USAXSMode="U:" name="Blank Air Bio Grace " x="20.001" y="40.000"/>
+      <row USAXSMode="U:P:W:" x="20.001" y="60.000"/>
+      <row USAXSMode="U:P:W:" name="B16-1" thickness="1" x="20.001" y="80.000"/>
+      <row USAXSMode="U:P:W:" x="20.001" y="100.000"/>
+      <row USAXSMode="U:P:W:" name="B16-2" thickness="1" x="19.001" y="120.300"/>
+      <row USAXSMode="U:P:W:" x="21.001" y="140.000"/>
+      <row USAXSMode="U:P:W:" name="SA16-1" thickness="1" x="21.001" y="160.000"/>
+      <row USAXSMode="U:P:W:" x="40.001" y="1.000"/>
+      <row USAXSMode="U:P:W:" x="40.001" y="21.000"/>
+      <row USAXSMode="U:P:W:" x="40.001" y="40.000"/>
+      <row USAXSMode="U:P:W:" x="40" y="60"/>
+      <row USAXSMode="U:P:W:" x="41.001" y="80.000"/>
+      <row USAXSMode="U:P:W:" x="40.001" y="100.000"/>
+      <row USAXSMode="U:P:W:" x="40.001" y="121.000"/>
+      <row USAXSMode="U:P:W:" x="40.001" y="140.000"/>
+      <row USAXSMode="U:P:W:" x="39.001" y="158.000"/>
+      <row USAXSMode="U:P:W:" name="SA16-1" thickness="1" x="60.001" y="1.000"/>
+      <row USAXSMode="U:P:W:" x="60.001" y="19.000"/>
+      <row USAXSMode="U:P:W:" name="T16-1" thickness="1" x="60.001" y="40.000"/>
+      <row USAXSMode="U:P:W:" x="60.001" y="59.000"/>
+      <row USAXSMode="U:P:W:" name="T16-2" thickness="1" x="61.001" y="80.000"/>
+      <row USAXSMode="U:P:W:" x="60.001" y="100.000"/>
+      <row USAXSMode="U:P:W:" name="T8SA8-1" thickness="1" x="61.001" y="121.000"/>
+      <row USAXSMode="U:P:W:" x="60.001" y="140.000"/>
+      <row USAXSMode="U:P:W:" name="T8SA8-2" thickness="1" x="60" y="160"/>
+      <row USAXSMode="U:P:W:" thickness="1" x="81.001" y="0.000"/>
+      <row USAXSMode="U:P:W:" x="80.001" y="18.000"/>
+      <row USAXSMode="U:P:W:" x="81.001" y="39.000"/>
+      <row USAXSMode="U:P:W:" x="80.001" y="60.000"/>
+      <row USAXSMode="U:P:W:" x="80.001" y="80.000"/>
+      <row USAXSMode="U:P:W:" x="80.001" y="100.000"/>
+      <row USAXSMode="U:P:W:" x="80.001" y="140.000"/>
+      <row USAXSMode="U:P:W:" x="80" y="140"/>
+      <row USAXSMode="U:P:W:" x="80.001" y="159.000"/>
+      <row USAXSMode="U:P:W:" name="B8SA8-1" thickness="1" x="100.001" y="1.000"/>
+      <row USAXSMode="U:P:W:" x="100.001" y="20.000"/>
+      <row USAXSMode="U:P:W:" name="B8SA8-2" thickness="1" x="100.001" y="38.000"/>
+      <row USAXSMode="U:P:W:" x="100" y="60"/>
+      <row USAXSMode="U:P:W:" name="B8T8-1" thickness="1" x="99.001" y="79.000"/>
+      <row USAXSMode="U:P:W:" x="100" y="100"/>
+      <row USAXSMode="U:P:W:" name="B8T8-2" thickness="1" x="101.001" y="120.000"/>
+      <row USAXSMode="U:P:W:" x="100" y="140"/>
+      <row USAXSMode="U:P:W:" name="TBSA-1" thickness="1" x="100.001" y="158.000"/>
+      <row USAXSMode="U:P:W:" x="120" y="0"/>
+      <row USAXSMode="U:P:W:" x="120" y="20"/>
+      <row USAXSMode="U:P:W:" x="120" y="40"/>
+      <row USAXSMode="U:P:W:" x="121.001" y="60.000"/>
+      <row USAXSMode="U:P:W:" x="120" y="80"/>
+      <row USAXSMode="U:P:W:" x="120.001" y="100.000"/>
+      <row USAXSMode="U:P:W:" x="120" y="120"/>
+      <row USAXSMode="U:P:W:" x="120.001" y="141.000"/>
+      <row USAXSMode="U:P:W:" x="119.001" y="159.000"/>
+      <row USAXSMode="U:P:W:" name="TBSA-2" x="140.001" y="0.000"/>
+      <row USAXSMode="U:P:W:" x="140" y="20"/>
+      <row USAXSMode="U:P:W:" x="140" y="40"/>
+      <row USAXSMode="U:P:W:" x="140" y="60"/>
+      <row USAXSMode="U:P:W:" x="140" y="80"/>
+      <row USAXSMode="U:P:W:" x="140" y="100"/>
+      <row USAXSMode="U:P:W:" x="140" y="120"/>
+      <row USAXSMode="U:P:W:" x="140" y="140"/>
+      <row USAXSMode="U:P:W:" x="140" y="160"/>
+      <row USAXSMode="U:P:W:" x="160" y="0"/>
+      <row USAXSMode="U:P:W:" x="160" y="20"/>
+      <row USAXSMode="U:P:W:" x="160" y="40"/>
+      <row USAXSMode="U:P:W:" x="160" y="60"/>
+      <row USAXSMode="U:P:W:" x="160" y="80"/>
+      <row USAXSMode="U:P:W:" x="160" y="100"/>
+      <row USAXSMode="U:P:W:" x="160" y="120"/>
+      <row USAXSMode="U:P:W:" x="160" y="140"/>
+      <row USAXSMode="U:P:W:" x="160" y="160"/>
+      <row USAXSMode="U:P:W:" x="178" y="0"/>
+      <row USAXSMode="U:P:W:" x="180" y="20"/>
+      <row USAXSMode="U:P:W:" x="180" y="40"/>
+      <row USAXSMode="U:P:W:" x="180" y="60"/>
+      <row USAXSMode="U:P:W:" x="180" y="80"/>
+      <row USAXSMode="U:P:W:" x="180" y="100"/>
+      <row USAXSMode="U:P:W:" x="180" y="120"/>
+      <row USAXSMode="U:P:W:" x="180" y="140"/>
+      <row USAXSMode="U:P:W:" x="180" y="160"/>
+    </tab>
+    <tab name="AgBehLaB6" selected="True">
+      <row USAXSMode="P:W:" name="AgBehenateLaB6" thickness="4" x="0" y="0"/>
+      <row USAXSMode="P:W:"/>
+    </tab>
+    <tab name="tab 10">
+      <row USAXSMode="U:P:W:" name="AIrBlank" x="20.000" y="0"/>
+      <row USAXSMode="U:P:W:" name="GC_SRM3600" thickness="1" x="20.000" y="40.000"/>
+    </tab>
+    <tab name="AJ">
+      <row USAXSMode="U:P:W:" name="GlassBlank" thickness="1" x="0.000" y="0.000"/>
+    </tab>
+    <tab name="Clemons">
+      <row USAXSMode="U:P:W:" name="WaterBlankTDC1" thickness="4" x="29.900" y="0.000"/>
+      <row USAXSMode="U:P:W:" name="GlassNMRtube" thickness="4" x="39.900" y="0.000"/>
+      <row USAXSMode="U:P:W:" name="TDC2" thickness="4" x="49.900" y="3.000"/>
+      <row USAXSMode="U:P:W:" name="TDC3" thickness="4" x="59.900" y="3.000"/>
+      <row USAXSMode="U:P:W:" name="TDC4" thickness="4" x="69.900" y="3.000"/>
+      <row USAXSMode="U:P:W:" name="TDC5" thickness="4" x="79.900" y="3.000"/>
+      <row USAXSMode="U:P:W:" name="WaterBlankTDC1" thickness="4" x="29.900" y="-1.000"/>
+      <row USAXSMode="U:P:W:" name="TDC6" thickness="4" x="89.900" y="3.000"/>
+      <row USAXSMode="U:P:W:" name="TDC7" thickness="4" x="99.900" y="3.000"/>
+      <row USAXSMode="U:P:W:" name="GlassNMRTube" thickness="4" x="39.900" y="1.000"/>
+      <row USAXSMode="U:P:W:" name="WaterBlankTDC1" thickness="4" x="29.900" y="1.000"/>
+    </tab>
+    <tab name="Myers1">
+      <row USAXSMode="U:P:W:" name="AirBlank" x="20" y="0"/>
+      <row USAXSMode="U:P:W:" name="TapeBlank2L-1" x="20" y="60"/>
+      <row USAXSMode="U:P:W:" name="TVC1" x="40.000" y="0.000"/>
+      <row USAXSMode="U:P:W:" name="TVC2" x="40.000" y="20.000"/>
+      <row USAXSMode="U:P:W:" name="TVC3" x="40.000" y="40.000"/>
+      <row USAXSMode="U:P:W:" name="TVC4" x="40.000" y="60.000"/>
+      <row USAXSMode="U:P:W:" name="TVC5" x="40.000" y="82.000"/>
+      <row USAXSMode="U:P:W:" name="TVC6" x="40.000" y="100.000"/>
+      <row USAXSMode="U:P:W:" name="GM_1a" x="40.000" y="121.000"/>
+      <row USAXSMode="U:P:W:" name="GM_1c" x="39.000" y="141.000"/>
+      <row USAXSMode="U:P:W:" name="GM_2a" x="40.000" y="161.000"/>
+      <row USAXSMode="U:P:W:" name="GM_2c" x="59.000" y="160.000"/>
+      <row USAXSMode="U:P:W:" name="TapeBlank2L-2" x="20" y="80"/>
+      <row USAXSMode="U:P:W:" name="GM_3a" x="60" y="140"/>
+      <row USAXSMode="U:P:W:" name="GM_3c" x="60" y="120"/>
+      <row USAXSMode="U:P:W:" name="GM_4b" x="60" y="100"/>
+      <row USAXSMode="U:P:W:" name="GM_4d" x="60" y="80"/>
+      <row USAXSMode="U:P:W:" name="GM_5b" x="60" y="60"/>
+      <row USAXSMode="U:P:W:" name="GM_5d" x="60" y="40"/>
+      <row USAXSMode="U:P:W:" name="GM_6b" x="60" y="20"/>
+      <row USAXSMode="U:P:W:" name="GM_6d" x="60" y="0"/>
+      <row USAXSMode="U:P:W:" name="GM_MPL_2X" x="80" y="0"/>
+      <row USAXSMode="U:P:W:" name="GM_MPL_3" x="80" y="20"/>
+      <row USAXSMode="U:P:W:" name="TapeBlank2L-1" x="20" y="60"/>
+    </tab>
+    <tab name="Myers2">
+      <row USAXSMode="U:P:W:" name="TapeBlank2L-1" x="20.000" y="60.000"/>
+      <row USAXSMode="U:P:W:" name="HC1" x="40.000" y="0.000"/>
+      <row USAXSMode="U:P:W:" name="HC2" x="40" y="20"/>
+      <row USAXSMode="U:P:W:" name="HC3" x="40" y="40"/>
+      <row USAXSMode="U:P:W:" name="HC4" x="40" y="60"/>
+      <row USAXSMode="U:P:W:" name="HC5" x="40" y="80"/>
+      <row USAXSMode="U:P:W:" name="TapeBlank2L-2" x="20" y="80"/>
+      <row USAXSMode="U:P:W:" name="AFI" x="40" y="100"/>
+      <row USAXSMode="U:P:W:" name="ECAT_1" x="40" y="120"/>
+      <row USAXSMode="U:P:W:" name="MUK1" x="40" y="140"/>
+      <row USAXSMode="U:P:W:" name="MUK2" x="40" y="160"/>
+      <row USAXSMode="U:P:W:" name="MUK3" x="60" y="160"/>
+      <row USAXSMode="U:P:W:" name="MUK4" x="60" y="140"/>
+      <row USAXSMode="U:P:W:" name="MUK5" x="60" y="120"/>
+      <row USAXSMode="U:P:W:" name="TapeBlank4L-1" x="20" y="100"/>
+      <row USAXSMode="U:P:W:" name="MEM1" x="60" y="80"/>
+      <row USAXSMode="U:P:W:" name="MEM2" x="60" y="60"/>
+      <row USAXSMode="U:P:W:" name="MEM3" x="60" y="40"/>
+      <row USAXSMode="U:P:W:" name="MEM4" x="60" y="20"/>
+      <row USAXSMode="U:P:W:" name="TapeBlank4L-2" x="20" y="160"/>
+      <row USAXSMode="U:P:W:" name="AirBlank" x="60" y="100"/>
+    </tab>
+    <tab name="LeMa">
+      <row USAXSMode="U:P:W:" name="AgBehenate" thickness="4" x="0.000" y="0.000"/>
+      <row USAXSMode="U:P:W:" name="spl_1" thickness="4" x="10.000" y="0"/>
+      <row USAXSMode="U:P:W:" name="spl_2" thickness="4" x="20" y="0"/>
+      <row USAXSMode="U:P:W:" name="spl_3" thickness="4" x="0" y="0.000"/>
+    </tab>
+  </XYpair>
+</wxmtusaxs>

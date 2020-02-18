@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /home/beams/USAXS/Apps/wxmtusaxs/
+#!/APSshare/bin/python  wxmtusaxs.py samplestage.xml  &
+/home/beams/USAXS/WORKAROUND/APSsharePython.sh  wxmtusaxs.py samplestage.xml  &

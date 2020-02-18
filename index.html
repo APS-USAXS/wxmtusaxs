@@ -1,0 +1,322 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--
+	########### SVN repository information ###################
+	# $Date: 2011-05-20 16:22:14 -0500 (Fri, 20 May 2011) $
+	# $Author: pbeaucage $
+	# $Revision: 472 $
+	# $URL: https://subversion.xor.aps.anl.gov/small_angle/USAXS/wxmtusaxs/index.html $
+	# $Id: index.html 472 2011-05-20 21:22:14Z pbeaucage $
+	########### SVN repository information ###################
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>wxmtusaxs: a GUI tool for usaxs.mac</title>
+	</head>
+	<body bgcolor="#f0f0f8">
+
+		<!-- begin common header -->
+		<table>
+			<tbody>
+				<tr>
+					<td valign="top"><h1>wxmtusaxs</h1>
+						<h2>A GUI tool for usaxs.mac</h2>
+						<br/><b>author: Peter Beaucage (pbeaucage@aps.anl.gov) and Pete R. Jemian (jemian@anl.gov)</b>
+						<br/><b>version: 0.5</b>
+					</td>
+					<td valign="top"><img 
+					src="graphics/logo.png" alt="wxmtxy logo"/></td>
+				</tr>
+			</tbody>
+		</table> 
+		<!-- end common header -->
+
+		<h1>Overview</h1>
+
+			<p><b>wxmtxy</b> provides usaxs operational support to users, 
+			allowing them to define a table of samplesand provides a one-button click to drive 
+			the stage to a specific sample setting.  Users can also define USAXS parameters and export
+			the sample list to a USAXS macro.</p>
+			
+		    <p>In the Graphical User Interface (GUI), tooltips are provided
+            for most items.  Moving and pausing the mouse over a widget 
+            (GUI component such as a button or a label) will cause a terse
+            description of that widget to be displayed.  Moving the mouse
+            away will cause that tooltip to disappear.</p>
+		
+		    <p>For more help, explanations of wxmtusaxs functions are provided in the HTML pages
+            you are viewing now.</p>
+		
+		<h3>Create a new tab/sample set</h3>
+		You can add a new tab to the end of the list of tabs
+		to document a set of samples to be run concurrently (e.g, a paddle of USAXS samples).
+		Make a new tab by selecting the <em>Page</em> menu, <em>Create new tab</em> item.
+		Note that Ctrl+t is a keyboard shortcut for the same menu selection.
+
+		<h3>Create a new Row</h3>
+		You can add a new row to the end of the displayed tab
+		to document a new sample.
+		Make a new row by selecting the <em>Page</em> menu, <em>Create new row</em> item.
+		Note that Ctrl+r is a keyboard shortcut for the same menu selection.
+
+		<h3>Save the settings to a Settings File</h3>
+
+		To save the current settings to a file, select the <em>File</em> menu,
+		<em>Save As ...</em> item.  
+		<br/>
+		
+		<p>
+		<a href="graphics/fig13.png"><img 
+		src="graphics/fig13.png" alt="Figure 13"/></a>
+		</p>
+		
+		<p>A save file window will appear.  Navigate to a directory
+		to save your settings, enter a name <em>with the extension <tt>.XML</tt></em>
+		and finish your task.
+		</p>
+		
+		<p>
+		<a href="graphics/fig14.png"><img 
+		src="graphics/fig14.png" alt="Figure 14"/></a>
+		</p>
+		
+		<h3>Export USAXS macro</h3>
+		<p>You can export the current tab as a usaxs macro by clicking the export button 
+		in the toolbar, or using the File>Export USAXS Macro command.  The save location and name
+		will default to the current USAXS data directory and usaxs.mac.  </p>
+		
+
+		<h2>Definitions</h2>
+		
+		<h3>General terms</h3>
+		<table border="2" title="General terms">
+			<thead>
+				<tr>
+					<th>term</th>
+					<th>description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>EPICS&nbsp;PV</td>
+					<td>EPICS Process variable name.  See http://www.aps.anl.gov/epics.
+						Perhaps a document such as http://www.aps.anl.gov/epics/base/R3-14/10-docs/CAref.html
+						for more details.</td>
+				</tr>
+				<tr>
+					<td>EPICS motor record</td>
+					<td>EPICS abstract specification of a positioner such as a stepping motor.
+						See http://www.aps.anl.gov/bcda/synApps/motor/index.html
+						or http://www.aps.anl.gov/bcda/synApps/motor/R6-4/motorRecord.html for more details.</td>
+				</tr>
+				<tr>
+					<td>XYpair</td>
+					<td>set of Tabs in wxmtxy belonging to an XYpair</td>
+				</tr>
+				<tr>
+					<td>Tab</td>
+					<td>set of Rows in a Tab of an XYpair in wxmtxy</td>
+				</tr>
+				<tr>
+					<td>Row</td>
+					<td>specific combination in wxmtxy of (label, X_position, Y_position)</td>
+				</tr>
+				<tr>
+					<td>Settings File</td>
+					<td>XML file with specifications for EPICS Process Variables
+						and saved positions for the wxmtxy.py application</td>
+				</tr>
+				<tr>
+					<td>Text positions file</td>
+					<td>The "Text positions file" is a plain text file and can be
+						prepared with any text editor.  The file describes a set 
+						of positions to be loaded into a Tab of the wxmyxy application.</td>
+				</tr>
+				<tr>
+					<td>USAXS macro file</td>
+					<td>A spec macro in the standard USAXS format, including pinhole exposures if selected.</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h1>Files</h1>
+		
+		    <p>The "Text positions file" is a plain text file and can be
+                prepared with any text editor.  The file describes a set 
+                of positions to be loaded into a Tab of the wxmtxy application.
+                It contains an arbitrary number of rows.  Each row contains 
+                three values, separated by tabs.
+                The values are "label X_position Y_position"
+                where the positions are in "mm".
+                An example is provided
+                (<a href="examples/standard-paddle.txt">examples/standard-paddle.txt</a>)
+                that describes the positions on the standard 4-column paddle.</p>
+		
+		<p>Users will likely produce a"Text positions file" by preparing a 
+                spreadsheet with sample description (label) and X,Y positions
+                on the sample paddle.  The origin (0,0) is the notch on the 
+                upper-right edge of the paddle.</p>
+		
+		<h3>example file: Text positions</h3>
+		<table border="2" title="Text positions file">
+			<thead>
+				<tr>
+					<th>file</th>
+					<th>description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="examples/standard-paddle.txt"><code>examples/standard-paddle.txt</code></a></td>
+					<td>positions on the standard 4-column paddle</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h3>example file: XML Settings</h3>
+		<table border="2" title="XML Settings file">
+			<thead>
+				<tr>
+					<th>file</th>
+					<th>description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="examples/test-settings.xml"><code>examples/USAXS_XY.xml</code></a></td>
+					<td>settings file from USAXS sample and detector stages</td>
+				</tr>
+				<tr>
+					<td><a href="examples/test-settings.xml"><code>examples/test-settings.xml</code></a></td>
+					<td>settings file used by developer to test various features</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h1>Python source file documentation</h1>
+		
+		<h3>PyDocs from wxmtxy source code</h3>
+		<table border="2" title="PyDocs">
+			<thead>
+				<tr>
+					<th>file</th>
+					<th>description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="pydoc/wxmtxy.html">wxmtxy.py</a></td>
+					<td>starts the wxmtxy application</td>
+				</tr>
+				<tr>
+					<td><a href="pydoc/wxmtxy_root.html">wxmtxy_root.py</a></td>
+					<td>Main frame of wxmtxy application</td>
+				</tr>
+				<tr>
+					<td><a href="pydoc/wxmtxy_pair.html">wxmtxy_pair.py</a></td>
+					<td>configuration for X,Y pair of EPICS positioners</td>
+				</tr>
+				<tr>
+					<td><a href="pydoc/wxmtxy_tab.html">wxmtxy_tab.py</a></td>
+					<td>set of rows with positioner settings</td>
+				</tr>
+				<tr>
+					<td><a href="pydoc/wxmtxy_row.html">wxmtxy_row.py</a></td>
+					<td>Define/manage GUI elements for one row of the table</td>
+				</tr>
+				<tr>
+					<td><a href="pydoc/wxmtxy_pvsetup.html">wxmtxy_pvsetup.py</a></td>
+					<td>configure EPICS for X,Y pair</td>
+				</tr>
+				<tr>
+					<td><a href="pydoc/wxmtxy_xml.html">wxmtxy_xml.py</a></td>
+					<td>read/write routines for wxmtxy XML settings</td>
+				</tr>
+				<tr>
+					<td><a href="pydoc/wxmtxy_axis.html">wxmtxy_axis.py</a></td>
+					<td>Maintain EPICS PVs and connections for one axis</td>
+				</tr>
+				<tr>
+					<td><a href="pydoc/wxmtxy_version.html">wxmtxy_version.py</a></td>
+					<td>version information for wxmtxy</td>
+				</tr>
+				<tr>
+					<td><a href="pydoc/setup.html">setup.py</a></td>
+					<td>Python distutils packaging file for wxmtxy</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Helper files that could work with other Python projects</h3>
+		<table border="2" title="Helper files">
+			<thead>
+				<tr>
+					<th>file</th>
+					<th>description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="pydoc/wxmtxy_htmlview.html">wxmtxy_htmlview.py</a></td>
+					<td>HtmlView to view HTML-formatted help files</td>
+				</tr>
+				<tr>
+					<td><a href="pydoc/pvConnect.html">pvConnect.py</a></td>
+					<td>simplified connections to an EPICS PV using CaChannel</td>
+				</tr>
+				<tr>
+					<td><a href="pydoc/menuLauncher.html">menuLauncher.py</a></td>
+					<td>standalone GUI to launch various utilities</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h3>Other files</h3>
+		<table border="2" title="Other files">
+			<thead>
+				<tr>
+					<th>file</th>
+					<th>description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="LICENSE">LICENSE</a></td>
+					<td>APS EPICS extensions software license</td>
+				</tr>
+				<tr>
+					<td><a href="README">README</a></td>
+					<td>Comments to developers reading the source code files</td>
+				</tr>
+				<tr>
+					<td><a href="examples/wxmtxy_settings.xsl">XSLT stylesheet</a></td>
+					<td>XSLT stylesheet to display settings files nicely in a WWW browser</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h2>Requirements</h2>
+		<!-- Need some writing here -->
+		<p>Python</p>
+		<p>wxPython</p>
+		<p>ca</p>
+		<p>CaChannel</p>
+
+<hr />
+
+The wxmtusaxs application and related files are copyyright (c) 2009.
+<pre>
+#*************************************************************************
+# Copyright (c) 2009-2010 The University of Chicago, as Operator of Argonne
+#     National Laboratory.
+# Copyright (c) 2009-2010 The Regents of the University of California, as
+#     Operator of Los Alamos National Laboratory.
+# This file is distributed subject to a Software License Agreement found
+# in the file LICENSE that is included with this distribution. 
+#*************************************************************************
+</pre>
+
+
+	</body>
+</html>
